@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 62,5%;
+}
+
+.imc {
+  height: 100vh;
+	width: 100%;
+  background-color: #7159c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 400px;
+}
+
+.form__label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+
+.form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 0.7rem 0.6rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+
+.submitButton {
+  background-color: #7a58e9;
+  border: 0;
+  padding: 0.7rem 0.6rem;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(197, 197, 197);
+  transition: all 0.2s ease-in-out;
+}
+
+.submitButton:hover {
+  background-color: #8e73e7;
+}
+
+.submitButton:focus {
+  outline: none;
+}
+
+.imc__result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.6rem;
+  font-size: 1.2em;
+  margin-top: 2.0em;
+  margin-left: 70px;
+  flex-direction: column;
+  height: auto;
+}
+
+.imc__calc {
+  display: flex;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+
+}
+
+.imc__calc span {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  height: 220px;
+  border-collapse: collapse;
+  border: 1px solid #7a58e9;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+th {
+  background-color: #7a58e9;
+  height: 34px;
+  width: 25%;
+  font-weight: lighter;
+  border: 1px solid #7a58e9;
+  transition: all 0.2s;
+}
+
+tr {
+  border-bottom: 1px solid #cccccc;
+}
+
+td {
+  border-right: 1px solid #cccccc;
+  padding: 10px;
+  transition: all 0.2s;
+  color: rgb(78, 78, 78);
+}
+
+.imc__table {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: float 5s infinite;
+}
+
+.imc__item {
+  background-color: #7159c1;
+}
+
+.imc__item td {
+  color: #fff;
+}
