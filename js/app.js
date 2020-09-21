@@ -42,15 +42,15 @@ function preventDefault() {
     function convertInputNumber(value) {
       return parseFloat(value);
     }
-
+    
     let altura = convertInputNumber(inputAltura.value);
     let peso = convertInputNumber(inputPeso.value);
 
     if (altura <= 0 || peso <=0) {
       return;
     }
-
-    imc = peso / (altura ^ 2);
+    
+    imc = peso / (altura * altura);
 
     classificationICM();
     render();
